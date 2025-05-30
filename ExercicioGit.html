@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Dois Números</title>
+    <script>
+        function calcularSoma() {
+    
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Por favor, insira dois números válidos.");
+                return;
+            }
+
+           
+            var soma = num1 + num2;
+
+            if (soma > 20) {
+                soma += 8; 
+            } else {
+                soma -= 5; 
+            }
+
+            document.getElementById("resultado").innerText = "Resultado: " + soma;
+        }
+    </script>
+</head>
+<body>
+    <h
